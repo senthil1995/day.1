@@ -1,0 +1,57 @@
+                            1. Write a blog on Difference between HTTP1.1 vs HTTP2 (HTTP-Hyper Text Transfer Protocol)
+
+               HTTP1.1
+1 It works on the textual format.
+
+2 it compresses data by itself.
+
+3 It uses requests resources inlining for use getting multiple passes.
+
+4 There is head of the line blocking all the requests behind it until it doesn't get its all resources.
+
+5 There is a problem which is creating a persistent connection between server and client
+
+6 There are other problems, such as plain text header being sent that are large, especially when cookies are in use.
+
+7 It doesn't offer a way to prioritise requests, which could lead to less critical resources blocking more important ones.
+
+8 In the document are likely various assets.
+things like images, stylesheets (CSS file).
+and Javascript assets (js files). 
+
+9 These limitations often lead to inefficient
+use of network resources as subsequent requests had to wait for the previous request to complete.
+
+10 Lack of prioritization.
+
+
+                            HTTP 2
+1 It works on the binary protocol.
+
+2 It uses HPACK for data compression.
+
+3 It uses PUSH frame by server that collects all multiple pages.
+
+4 It allows multiplexing, so one TCP connection is required for multiple requests.
+
+5 Using bottleneck layer partition the client and the server problem is resolved.
+
+6. It enables client to prioritise, allowing more. critical resources to be fetched and rendered
+first. 
+
+7 It relies on the same underlying protocol in order to operate: TCP
+
+8 In this it works differently using multiplexing the browser effectively requests the assets together, and then receives in same way.
+
+9 Server can proactively push resources to the clients cache before they requested, to reduce latency and improve overall user experience
+
+10 Improved in prioritization.
+
+
+
+
+
+
+
+
+
